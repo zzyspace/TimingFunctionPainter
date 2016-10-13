@@ -1,5 +1,5 @@
 //
-//  ZYPathPainter.swift
+//  ZYCurvePainter.swift
 //  TimingFunctionPainter
 //
 //  Created by 张志延 on 16/10/13.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol ZYPathPainterProtocal: NSObjectProtocol {
+protocol ZYCurvePainterProtocal: NSObjectProtocol {
     func controlPointUpdated(controlPoint1: CGPoint, controlPoint2: CGPoint)
 }
 
-class  ZYPathPainter: UIView {
-    weak var delegate: ZYPathPainterProtocal?
+class  ZYCurvePainter: UIView {
+    weak var delegate: ZYCurvePainterProtocal?
     
     open var controlPoint1 = CGPoint(x: 0, y: 0) {
         didSet {

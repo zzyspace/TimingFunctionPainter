@@ -12,7 +12,7 @@
 		5AA2B1021DAF6C51001A680B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AA2B1001DAF6C51001A680B /* Main.storyboard */; };
 		5AA2B1041DAF6C51001A680B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AA2B1031DAF6C51001A680B /* Assets.xcassets */; };
 		5AA2B1071DAF6C51001A680B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AA2B1051DAF6C51001A680B /* LaunchScreen.storyboard */; };
-		5AA2B1121DAF6D17001A680B /* ZYPathPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA2B1111DAF6D17001A680B /* ZYPathPainter.swift */; };
+		5AEB0D4D1DAFAF7C0089BF67 /* ZYCurvePainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEB0D4C1DAFAF7C0089BF67 /* ZYCurvePainter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		5AA2B1031DAF6C51001A680B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AA2B1061DAF6C51001A680B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AA2B1081DAF6C51001A680B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5AA2B1111DAF6D17001A680B /* ZYPathPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYPathPainter.swift; sourceTree = "<group>"; };
+		5AEB0D4C1DAFAF7C0089BF67 /* ZYCurvePainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYCurvePainter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +56,10 @@
 		5AA2B0FB1DAF6C51001A680B /* TimingFunctionPainter */ = {
 			isa = PBXGroup;
 			children = (
-				5AA2B1101DAF6D0B001A680B /* ZYPathPainter */,
+				5AEB0D4B1DAFAF7C0089BF67 /* ZYCurvePainter */,
 				5AA2B0FC1DAF6C51001A680B /* AppDelegate.swift */,
 				5AA2B0FE1DAF6C51001A680B /* ViewController.swift */,
+				5AA2B1001DAF6C51001A680B /* Main.storyboard */,
 				5AA2B10E1DAF6CA6001A680B /* Resources */,
 			);
 			path = TimingFunctionPainter;
@@ -67,7 +68,6 @@
 		5AA2B10E1DAF6CA6001A680B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5AA2B1001DAF6C51001A680B /* Main.storyboard */,
 				5AA2B1031DAF6C51001A680B /* Assets.xcassets */,
 				5AA2B1051DAF6C51001A680B /* LaunchScreen.storyboard */,
 				5AA2B1081DAF6C51001A680B /* Info.plist */,
@@ -75,12 +75,12 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		5AA2B1101DAF6D0B001A680B /* ZYPathPainter */ = {
+		5AEB0D4B1DAFAF7C0089BF67 /* ZYCurvePainter */ = {
 			isa = PBXGroup;
 			children = (
-				5AA2B1111DAF6D17001A680B /* ZYPathPainter.swift */,
+				5AEB0D4C1DAFAF7C0089BF67 /* ZYCurvePainter.swift */,
 			);
-			path = ZYPathPainter;
+			path = ZYCurvePainter;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -155,7 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AA2B0FF1DAF6C51001A680B /* ViewController.swift in Sources */,
-				5AA2B1121DAF6D17001A680B /* ZYPathPainter.swift in Sources */,
+				5AEB0D4D1DAFAF7C0089BF67 /* ZYCurvePainter.swift in Sources */,
 				5AA2B0FD1DAF6C51001A680B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

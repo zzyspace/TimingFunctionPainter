@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var curvePainter: ZYPathPainter!
+    @IBOutlet weak var curvePainter: ZYCurvePainter!
     @IBOutlet weak var point1xField: UITextField!
     @IBOutlet weak var point1yField: UITextField!
     @IBOutlet weak var point2xField: UITextField!
@@ -19,11 +19,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        curvePainter.delegate = self
         point1xField.delegate = self
         point1yField.delegate = self
         point2xField.delegate = self
         point2yField.delegate = self
+        curvePainter.delegate = self
+        view.bringSubview(toFront: curvePainter)
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -31,7 +32,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: ZYPathPainterProtocal {
+extension ViewController: ZYCurvePainterProtocal {
     func controlPointUpdated(controlPoint1: CGPoint, controlPoint2: CGPoint) {
         point1xField.text = String(format: "%.2f", controlPoint1.x)
         point1yField.text = String(format: "%.2f", controlPoint1.y)
