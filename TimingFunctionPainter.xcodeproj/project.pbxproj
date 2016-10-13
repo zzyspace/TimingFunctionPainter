@@ -12,6 +12,7 @@
 		5AA2B1021DAF6C51001A680B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AA2B1001DAF6C51001A680B /* Main.storyboard */; };
 		5AA2B1041DAF6C51001A680B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AA2B1031DAF6C51001A680B /* Assets.xcassets */; };
 		5AA2B1071DAF6C51001A680B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AA2B1051DAF6C51001A680B /* LaunchScreen.storyboard */; };
+		5AA2B1121DAF6D17001A680B /* ZYPathPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA2B1111DAF6D17001A680B /* ZYPathPainter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5AA2B1031DAF6C51001A680B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AA2B1061DAF6C51001A680B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AA2B1081DAF6C51001A680B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AA2B1111DAF6D17001A680B /* ZYPathPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYPathPainter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,15 +56,32 @@
 		5AA2B0FB1DAF6C51001A680B /* TimingFunctionPainter */ = {
 			isa = PBXGroup;
 			children = (
+				5AA2B1101DAF6D0B001A680B /* ZYPathPainter */,
 				5AA2B0FC1DAF6C51001A680B /* AppDelegate.swift */,
 				5AA2B0FE1DAF6C51001A680B /* ViewController.swift */,
+				5AA2B10E1DAF6CA6001A680B /* Resources */,
+			);
+			path = TimingFunctionPainter;
+			sourceTree = "<group>";
+		};
+		5AA2B10E1DAF6CA6001A680B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				5AA2B1001DAF6C51001A680B /* Main.storyboard */,
 				5AA2B1031DAF6C51001A680B /* Assets.xcassets */,
 				5AA2B1051DAF6C51001A680B /* LaunchScreen.storyboard */,
 				5AA2B1081DAF6C51001A680B /* Info.plist */,
 			);
-			path = TimingFunctionPainter;
+			name = Resources;
 			sourceTree = "<group>";
+		};
+		5AA2B1101DAF6D0B001A680B /* ZYPathPainter */ = {
+			isa = PBXGroup;
+			children = (
+				5AA2B1111DAF6D17001A680B /* ZYPathPainter.swift */,
+			);
+			path = ZYPathPainter;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -95,7 +114,7 @@
 				TargetAttributes = {
 					5AA2B0F81DAF6C51001A680B = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -136,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AA2B0FF1DAF6C51001A680B /* ViewController.swift in Sources */,
+				5AA2B1121DAF6D17001A680B /* ZYPathPainter.swift in Sources */,
 				5AA2B0FD1DAF6C51001A680B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +279,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TimingFunctionPainter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zzy.TimingFunctionPainter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -271,7 +293,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TimingFunctionPainter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zzy.TimingFunctionPainter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,6 +322,7 @@
 				5AA2B10D1DAF6C51001A680B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
